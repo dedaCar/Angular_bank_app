@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Bank">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BankApp Angular</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js" charset="utf-8"></script>
+    <script src="routs/route.js" charset="utf-8"></script>
+    <script src="jsi/app.js" charset="utf-8"></script>
+    <script src="jsi/controller/mainController.js" charset="utf-8"></script>
+    <script src="jsi/controller/editController.js" charset="utf-8"></script>
+    <script src="jsi/services/dbService.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+
+        <div class="jumbotron text-center">
+          <h1 class="page-header">BankApp Angular</h1>
+          <a href="#/" class="btn btn-primary">Accounts</a>
+          <a href="#/addAccount" class="btn btn-success">Add Account</a>
+          <a href="#/editDeleteAccounts" class="btn btn-danger">Edit/Delete</a>
+        </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-md-offset-2">
+      <div class="ng-view"></div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
